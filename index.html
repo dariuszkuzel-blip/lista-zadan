@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista zadań</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="karta">
+    <h1>Lista zadań</h1>
+    <p class="podpis">Dodaj zadanie, odhacz gdy skończysz, usuń gdy nie jest potrzebne.</p>
+
+    <form id="formularz" autocomplete="off">
+      <label class="sr-only" for="pole-zadania">Nowe zadanie</label>
+      <input id="pole-zadania" type="text" placeholder="Np. nauczyć się git commit" maxlength="120" required>
+      <button type="submit">Dodaj</button>
+    </form>
+
+    <p id="pusty" class="pusty">Nie masz jeszcze zadań.</p>
+    <ul id="lista"></ul>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
